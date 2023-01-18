@@ -1,0 +1,20 @@
+{
+    "name": "chahal26/countries-data-php",
+    "description": "Gets all coutries",
+    "type": "library",
+    "require": {
+        "php": ">=8.0.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Chahal26\\CountriesDataPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sahil Chahal",
+            "email": "dev.sahilchahal@gmail.com"
+        }
+    ]
+}
