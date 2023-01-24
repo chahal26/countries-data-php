@@ -3,8 +3,7 @@
     "description": "Gets all coutries",
     "type": "library",
     "require": {
-        "php": ">=8.0.0",
-        "illuminate/collections": "^9.48"
+        "php": ">=8.0.0"
     },
     "license": "MIT",
     "autoload": {
