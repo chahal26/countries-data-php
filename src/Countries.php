@@ -12,10 +12,8 @@ Class Countries {
 
     private static function getData($value)
     {
-        $getData = file_get_contents("../data/$value.json");
-        $data = json_decode($getData);
-        
-        return $data;
+        $data = file_get_contents("../data/$value.json");
+        return json_decode($data);
     }
 
     public static function getNames()
