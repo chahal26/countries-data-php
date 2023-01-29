@@ -17,4 +17,9 @@ Class Countries {
         
         return $data;
     }
+
+    public static function getNames()
+    {
+        return self::getData('name');
+    }
 }
