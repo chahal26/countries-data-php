@@ -9,4 +9,12 @@ Class Countries {
         
         return $data;
     }
+
+    private static function getData($value)
+    {
+        $getData = file_get_contents("../data/$value.json");
+        $data = json_decode($getData);
+        
+        return $data;
+    }
 }
