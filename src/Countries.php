@@ -4,10 +4,16 @@ namespace Chahal26\CountriesDataPhp;
 Class Countries {
 
     public static function getCountries(){
-        $getData = file_get_contents('../data/name.json');
-        $data = json_decode($getData);
-        
-        return $data;
+        $names = self::getNames();
+        $code3 = self::getCode3();
+
+        $countries = [];
+        foreach ($names as $code => $name) {
+            $countries[$code]['code3'] = $code3->$code;
+            $countries[$code]['name'] = $names->$code;
+        }
+
+        return $countries;
     }
 
     private static function getData($value)
