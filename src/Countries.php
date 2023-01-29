@@ -22,4 +22,9 @@ Class Countries {
     {
         return self::getData('name');
     }
+
+    public static function getCode3()
+    {
+        return self::getData('code3');
+    }
 }
