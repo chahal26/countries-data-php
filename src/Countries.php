@@ -3,7 +3,8 @@ namespace Chahal26\CountriesDataPhp;
 
 Class Countries {
 
-    public static function getCountries(){
+    public static function getCountries():array
+    {
         $names = self::getNames();
         $code3 = self::getCode3();
 
@@ -16,18 +17,18 @@ Class Countries {
         return $countries;
     }
 
-    private static function getData($value)
+    private static function getData($value):string
     {
         $data = file_get_contents("../data/$value.json");
         return json_decode($data);
     }
 
-    public static function getNames()
+    public static function getNames():string
     {
         return self::getData('name');
     }
 
-    public static function getCode3()
+    public static function getCode3():string
     {
         return self::getData('code3');
     }
